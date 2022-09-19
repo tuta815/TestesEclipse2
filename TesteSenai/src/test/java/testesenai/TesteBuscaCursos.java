@@ -30,7 +30,7 @@ private WebDriver driver;
 	@Test
 	public void testeNavegador() {
 		driver.get("https://www.mercadolivre.com.br/");
-		driver.findElement(By.id("cb1-edit")).sendKeys("teclado");
+		driver.findElement(By.className("nav-search-input")).sendKeys("teclado");
 		driver.findElement(By.className("nav-search-btn")).click();
 	}
 }
